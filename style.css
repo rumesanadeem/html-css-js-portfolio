@@ -1,0 +1,64 @@
+/* GENERAL STYLING */
+
+/* Imported fonts from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap');
+
+/* Target whole page using star 
+    use 0 for margin and padding just so we know there are no auto paddings or margins*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Edit font for logo/website name */
+nav, .logo {
+    font-family: "Tinos", serif;
+    font-size: 1.5rem;
+
+}
+
+html {
+    /* to allow smooth scrolling between sections */
+    scroll-behavior: smooth; 
+}
+
+/* target paragraph element  */
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION  */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV  */
+
+/* target nav now */
+nav, .nav-links {
+    /* displays items horizontally */
+    display: flex; 
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    /* adjusts view height of screen  */
+    height: 17vh;
+}
+
+.nav-links {
+    /* rem - related to pixels (unit of measurement)   */
+    gap: 2rem; 
+    /* removes bullet points from nav links */
+    list-style: none; 
+    font-size: 1.5rem;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-weight: 400;
+
+}
+
